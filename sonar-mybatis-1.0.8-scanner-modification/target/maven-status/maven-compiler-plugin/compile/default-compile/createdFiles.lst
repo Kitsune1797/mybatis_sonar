@@ -1,9 +1,0 @@
-org\sonarsource\plugins\mybatis\utils\IOUtils.class
-org\sonarsource\plugins\mybatis\rules\ErrorDataFromLinter.class
-org\sonarsource\plugins\mybatis\rules\MyBatisLintSensor.class
-org\sonarsource\plugins\mybatis\xml\MyBatisMapperXmlHandler.class
-org\sonarsource\plugins\mybatis\xml\XmlParser.class
-org\sonarsource\plugins\mybatis\rules\MyBatisLintRulesDefinition.class
-org\sonarsource\plugins\mybatis\MyBatisPlugin.class
-org\sonarsource\plugins\mybatis\Constant.class
-org\sonarsource\plugins\mybatis\languages\MyBatisQualityProfile.class
