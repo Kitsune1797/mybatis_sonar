@@ -19,7 +19,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'install sonar:sonar; package'
+    goals: 'install sonar:sonar'
 
 #Sonarqube
 - task: SonarQubePrepare@5
@@ -28,9 +28,9 @@ steps:
     scannerMode: 'Other'
 
 #Java Tool Installer
-    - task: JavaToolInstaller@0
-      inputs:
-        versionSpec: '17'
-        jdkArchitectureOption: 'x64'
-        jdkSourceOption: 'Pre-installed'
-        cleanDestinationDirectory: true
+- task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '17'
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'Pre-installed'
+      cleanDestinationDirectory: true
