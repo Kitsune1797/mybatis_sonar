@@ -19,7 +19,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'install sonar:sonar'
+    goals: 'install sonar:sonar; package'
 
 #Sonarqube
 - task: SonarQubePrepare@5
