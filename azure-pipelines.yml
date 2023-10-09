@@ -9,6 +9,12 @@ trigger:
 
 pool: default
 
+#Sonarqube
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'My_SonarQube'
+    scannerMode: 'Other'
+
 steps:
 - task: Maven@3
   inputs:
@@ -20,10 +26,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'install sonar:sonar'
-
-#Sonarqube
-- task: SonarQubePrepare@5
-  inputs:
-    SonarQube: 'My_SonarQube'
-    scannerMode: 'Other'
 
