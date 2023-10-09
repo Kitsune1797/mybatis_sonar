@@ -9,7 +9,7 @@ trigger:
 
 pool: default
 
-#Sonarqube
+
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'My_SonarQube'
