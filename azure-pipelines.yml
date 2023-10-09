@@ -18,7 +18,6 @@ steps:
   inputs:
     SonarQube: 'My_SonarQube'
     scannerMode: 'Other'
-  inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
